@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--CSS-->
+    <style>
+      div {
+        border: solid black 1px;
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 5</h1>
+    <br />
+    <hr />
+    <div id="box">
+      <label> 1st Number</label>
+      <input type="number" placeholder=" Enter Here" id="i1" /><br /><br />
+      <label for="">2nd Number</label>
+      <input type="number" placeholder="  Enter here" id="i2" /><br />
+      <br />
+      <button onclick="multi()">Multiply</button>
+      <button onclick="devide()">Divide</button>
+      <p id="res">Result -</p>
+    </div>
+    <!--JS-->
+    <script>
+      function multi() {
+        let a = Number(document.getElementById("i1").value);
+        let b = Number(document.getElementById("i2").value);
+
+        let res = document.getElementById("res");
+        res.innerHTML = "Result is: " + a * b;
+      }
+      function devide() {
+        let a = Number(document.getElementById("i1").value);
+        let b = Number(document.getElementById("i2").value);
+
+        let res = document.getElementById("res");
+        res.innerHTML = "Result is: " + a / b;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task4</title>
+    <!--CSS-->
+    <style>
+      #b1 {
+        border: none;
+        background-color: rgb(147, 237, 147);
+        border-radius: 999px;
+        padding: 3px;
+        width: 120px;
+      }
+      #b2 {
+        border: solid black 1px;
+        width: 200px;
+        border-radius: 999px;
+      }
+      #b3 {
+        border: none;
+        background-color: rgb(147, 237, 147);
+        border-radius: 999px;
+        padding: 3px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 4</h1>
+    <br />
+    <hr />
+    <button id="b1" onclick="main()">Add to Bag</button>
+    <button id="b2" onclick="sub()">Move to Wishlist</button>
+    <button id="b3" onclick="doble()">Add 1+1 Sale item</button>
+    <h2 id="txt">Your Bag has 0 items</h2>
+    <!--JS-->
+    <script>
+      let res = 0;
+      function main() {
+        let a = document.getElementById("txt");
+        res = res + 1;
+        a.innerHTML = "Your Bag has " + res + " items";
+      }
+      function sub() {
+        let a = document.getElementById("txt");
+        res = res - 1;
+        a.innerHTML = "Your bag has " + res + " items";
+      }
+      function doble() {
+        let a = document.getElementById("txt");
+        res = res + 2;
+        a.innerHTML = "Your bag has " + res + " items";
+      }
+    </script>
+  </body>
+</html>
